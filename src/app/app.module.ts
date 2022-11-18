@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppRoutingModule } from './core/app-routing.module';
+import { AppComponent } from './core/app.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
 import { MessagesComponent } from './components/messages/messages.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   imports: [
@@ -19,9 +20,7 @@ import { MessagesComponent } from './components/messages/messages.component';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-  ],
-  providers: [
-    // no need to place any providers due to the `providedIn` flag...
+    DashboardComponent,
   ],
   bootstrap: [AppComponent]
 })
